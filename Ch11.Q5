@@ -1,0 +1,16 @@
+Assume the existence of a Building class with a constructor that accepts two parameters: a reference to an Address object representing the building's address, and an int for the square footage of the building. Assume a subclass ApartmentBuilding has been defined with a single int instance variable, totalUnits.
+Write a constructor for ApartmentBuilding that accepts three parameters: an Address and an int to be passed up to the Building constructor, and an int used to initialize the totalUnits instance variable
+
+public ApartmentBuilding(Address a, int b, int c) {
+    super(a,b);
+    totalUnits = c;
+    
+}
+
+OR
+
+public ApartmentBuilding(Address address, int squareFootage, 
+    int totalUnits) {
+  super(address, squareFootage);
+  this.totalUnits = totalUnits;
+}
