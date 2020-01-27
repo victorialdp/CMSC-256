@@ -1,0 +1,5 @@
+//Assume the existence of a Window class with methods getWidth and getHeight, and a subclass TitledWindow, with a constructor accepts a string corresponding to the title of the window.
+Declare a variable, tWindow, of type TitledWindow variable, and initialize it to a TitledWindow object with a title of "My Title". Print out the width and height of the window (in that order) separated by a space.
+
+TitledWindow tWindow = new TitledWindow("My Title");
+System.out.println(tWindow.getWidth() + " " + tWindow.getHeight());
