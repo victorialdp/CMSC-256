@@ -1,0 +1,22 @@
+//class has method to return 1, 0, or -1 depending on sign of value from superclass
+
+public class ICalculator1 extends ICalculator {
+    //variables
+    
+    //constructors
+    
+    //methods
+    public int sign(){
+        int signType;
+        
+        if (getCurrentValue()>0){
+            signType=1;
+        } else if (getCurrentValue()<0){
+            signType=-1;
+        } else {
+            signType=0;
+        }
+        
+        return signType;
+    }
+}
