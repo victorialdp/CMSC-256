@@ -1,0 +1,26 @@
+public class CheckingAccount extends BankAccount(){
+    
+    //variables
+    private boolean overdraft;
+    
+    //constructors
+    public CheckingAccount(String accountHolder, boolean overdraft){
+        super(accountHolder);
+        this.overdraft = overdraft;
+    }
+    
+    //methods
+    public boolean hasOverdraft(){
+        return overdraft;
+    }
+    
+    public boolean clearCheck(double amount){
+        if (amount < getBalance() || overdraft) {
+            withdraw(amount);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+}
