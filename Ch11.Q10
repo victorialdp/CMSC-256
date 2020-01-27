@@ -1,0 +1,7 @@
+Many city ordinances have a requirement that buildings be surrounded by a certain amount of empty space for sunlight and fresh air. Apartment buildings usually have higher requirements than commercial or single residence properties. These requirements are often based upon square footage, number of occupants, etc.
+Assume the existence of a class Building with a method getRequiredEmptySpace that returns the amount of empty space (as an int representing square feet) for the building. Assume further, a subclass, ApartmentBuilding, with two int instance variables: totalUnits representing the number of apartments in the building and maxOccupantsPerunit, represents the maximum number of people allowed in each unit, by law.
+Override getRequiredEmptySpace in ApartmentBuilding to reflect the fact that apartment buildings require an additional square foot of empty space around it for each potential person living in the building.
+
+public int getRequiredEmptySpace() {
+    return super.getRequiredEmptySpace() + (maxOccupantsPerUnit * totalUnits);
+}
