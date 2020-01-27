@@ -1,0 +1,10 @@
+//this class extends another class & reverses sign of calculated value
+
+public class ICalculator2 extends ICalculator{
+   
+    //ICaulculator2 methods
+    public int negate(){
+        currentValue = currentValue*(-1);
+        return currentValue;
+    }
+}
