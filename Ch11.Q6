@@ -1,0 +1,7 @@
+Assume the existence of a BankAccount class with a constructor that accepts two parameters: a String for the account holder's name, followed by an int for the account number. Assume a subclass SavingsAccount has been defined with a double instance variable named interestRate.
+Write a constructor for SavingsAccount that accepts three parameters (in the following order): a String and an int that are passed to the constructor of BankAccount, and a double that is used to initialize the instance variable.
+
+public SavingsAccount(String accountHolderName, int accountNumber, double interestRate){
+    super(accountHolderName, accountNumber);
+    this.interestRate = interestRate;
+}
