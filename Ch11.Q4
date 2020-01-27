@@ -1,0 +1,11 @@
+A Color class has three public, int-returning accessor methods: getRed, getGreen, and getBlue, and three public, void-returning mutator methods: setRed, setGreen, setBlue, each of which accepts an int parameter and assigns it to the corresponding color component.
+The class, AlphaChannelColor—a subclass of Color—has an int instance variable, alpha, containing the alpha channel value, representing the degree of transparency of the color. AlphaChannelColor also has a method named dissolve (void-returning, and no parameters), that causes the color to fade a bit. It does this by incrementing (by 1) all three color components (using the above accessor and mutator methods) as well as the alpha component value.
+Write the dissolve method.
+
+public void dissolve(){
+    //incrememnts the 3 color components by 1
+    setRed(getRed()+1);
+    setGreen(getGreen()+1);
+    setBlue(getBlue()+1);
+    alpha = alpha+1;
+}
