@@ -1,0 +1,9 @@
+A Color class has three int color component instance variables: red, green, and blue.
+Write a toString method for this class. It should return a String consisting of the three color components (in the order red, green, blue) within parentheses, separated by commas, with a '#' prefix, e.g. #(125,30,210)
+
+
+
+@Override
+public String toString() {
+  return "#(" + red + "," + green + "," + blue + ")";
+}
