@@ -1,0 +1,8 @@
+Assume the existence of a Window class with int instance variables width, height, xPos and yPos.
+Define the method toString for the Window class. The String representation of a Window object should be of the form "A 'width'x'height' window at ('xPos','yPos')" where the values within the apostrophes are replaced by the actual values of the corresponding instance variables.
+For example, given a Window object whose width is 80, height is 20, xPos is 0 and yPos is 30, toString should return "A 80x20 window at (0,30)."
+
+@Override
+public String toString(){
+    return "A "+width+"x"+height+" window at ("+xPos+","+yPos+")";
+}
