@@ -1,0 +1,17 @@
+The superclass Student contains:
+a constructor that accepts a String corresponding to the name of the school the student attends
+a toString method that returns 'student at X' where X is the name of the school the student attends.
+Write a public subclass HighSchoolStudent, based on Student, which contains:
+*a constructor accepting a String which is used as a parameter to the superclass constructor
+*a toString method that returns 'high school student at X'. This method must use the toString method of its superclass.
+
+public class HighSchoolStudent extends Student {
+  public HighSchoolStudent(String name) {
+    super(name);
+  }
+				
+  @Override
+  public String toString() {
+    return "high school " + super.toString();
+  }
+}
