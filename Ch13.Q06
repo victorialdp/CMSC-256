@@ -1,0 +1,17 @@
+Write a non-public interface, PointingDevice, containing:
+an abstract method, getXCoord that returns an int
+an abstract method, getYCoord that returns an int
+an abstract method, attentionRequired that returns a boolean
+an abstract method, setResolution that accepts a double and returns a double
+
+interface PointingDevice{
+    
+    public abstract int getXCoord();
+    
+    public abstract int getYCoord();
+    
+    public abstract boolean attentionRequired();
+    
+    public abstract double setResolution(double a);
+    
+}
