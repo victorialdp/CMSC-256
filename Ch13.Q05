@@ -1,0 +1,14 @@
+Write a public interface named Test with the following behavior:
+a method getDuration that returns a Duration object.
+a method check that accepts an int parameter and returns a Result object.
+a method getScore that returns a double.
+
+public interface Test{
+    
+    public Duration getDuration();
+    
+    public Result check(int a);
+    
+    public double getScore();
+    
+}
