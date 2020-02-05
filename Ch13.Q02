@@ -1,0 +1,33 @@
+Banks and other financial service companies offer many types of accounts for clients to invest their funds. Every one of them has a notion of their current value, but the details of calculating such value depends upon the exact nature of the account.
+
+Write a public abstract class, Account, with the following:
+- an int static variable, nextId initialized to 10001
+- an int instance variable, id
+- a String instance variable name
+- a constructor that accepts a single String parameter used to initialize the name instance variable (the constructor also assigns to id the value of nextId which is then incremented)
+- two accessor methods, getId and getName, which return the values of the corresponding instance variables
+- an abstract method named getValue that accepts no parameters and returns an object of type Cash
+
+public abstract class Account {
+    private static int nextId = 10001;
+    private int id;
+    private String name;
+    
+    public Account (String name){
+        this.name = name;
+        id = nextId;
+        nextId++;
+        
+    }
+    
+    public int getId(){
+        return id;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public abstract Cash getValue();
+    
+}
