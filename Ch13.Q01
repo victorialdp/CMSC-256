@@ -1,0 +1,3 @@
+The abstract class DesktopComponent contains an abstract method named onClicked that is void-returning and accepts no parameters. Provide the declaration of this method.
+
+public abstract void onClicked();
