@@ -1,0 +1,12 @@
+Regardless of the type of communication device, there must be a way to transmit and receive data.
+Define a non-public interface, CommDevice, with two methods:
+1. transmit, which accepts two parameters—reference to a Destination object, and a String (in that order), and returns a boolean;
+2. receive, which accepts a parameter of type Duration, and returns a reference to a String.
+
+interface CommDevice{
+    
+    public boolean transmit(Destination a, String b);
+    
+    public String receive(Duration c);
+    
+}
