@@ -1,0 +1,22 @@
+Given the abstract class, RentableDwelling, containing:
+a private double instance variable, rentPerUnit
+a constructor accepting a double used to initialize rentPerUnit
+a method, getRentPerUnit, that returns the value of rentPerUnit
+an abstract method, getRentalIncome, that returns a double
+Write a public (non-abstract) subclass, ApartmentHouse, containing:
+an int instance variable, numberOfApartments
+a constructor accepting a double, passed to the superclass constructor, and an int used to initialize numberOfApartments
+the method getRentalIncome calculated as the product of numberOfApartments and the rent per unit. getRentalIncome returns a double.
+
+public class ApartmentHouse extends RentableDwelling{
+    private int numberOfApartments;
+    
+    public ApartmentHouse(double n, int o){
+        super(n);
+        numberOfApartments=o;
+    }
+    
+    public double getRentalIncome(){
+        return numberOfApartments * super.getRentPerUnit();
+    }
+}
