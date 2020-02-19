@@ -1,0 +1,46 @@
+//Lab 05
+//requires bridges-java-3.0.3.java
+
+import bridges.connect.Bridges;
+import bridges.base.Array1D;
+import bridges.base.Element;
+import bridges.base.Color;
+
+public class Setup {
+	public static void main(String[] args) throws Exception {
+
+	    /* Initialize a Bridges connection with your credentials */
+	    /* TODO: plug your own BRIDGES credentials */
+	    Bridges bridges = new Bridges(0, "Victoria24", "555283773123");
+
+	    /* Set an assignment title */
+	    bridges.setTitle("Array Example");
+
+	    /* Set up the array dimensions, allocate an Array of Elements */
+	    /* TODO: Make an array of size 10 */
+	    int arraySize = 10;
+	    Array1D<Integer> arr = new Array1D<Integer> (arraySize);
+	    
+	    /* Populate the array with integers */
+	    /* TODO: Make the array store square numbers*/
+	    for (int i=0; i<10; i++) {
+	    	arr.getElement(i).setValue(i*i);
+	    }
+	
+	    /* set the value as a Label */
+	    for (int i=0; i<10; i++) {
+	    	arr.getElement(i).setLabel(String.valueOf(i*i));
+	    }
+	    
+    	for (int i=0; i<10; i++) {
+	    	arr.getElement(i).setColor(new Color(1,i*25,i*27));
+	    }
+	   
+	    
+	    /* Tell BRIDGES which data structure to visualize */
+	    bridges.setDataStructure(arr);
+
+	    /* Visualize the Array */
+	    bridges.visualize();
+	}
+}
