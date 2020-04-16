@@ -1,0 +1,38 @@
+/**
+*https://bridgesuncc.github.io/bridges_setup_java_eclipse.html
+*/
+
+package Victoria24;
+
+//import relevant Bridges classes
+import bridges.connect.Bridges;
+import bridges.base.SLelement;
+
+public class HelloWorld {
+
+	public static void main(String[] args) throws Exception {
+		//create bridges project w your API Key & user ID
+		//bc we want proj to print "HelloWorld" use String as type
+		Bridges bridges = new Bridges(0,"Victoria24","555283773123");
+		
+		//create 2 singly-linked elements
+		//these can be linked together to create linked-list structure
+		SLelement sle0 = new SLelement("Hello","");
+		SLelement sle1 = new SLelement("World","");
+		
+		//link the elements
+		sle0.setNext(sle1);
+		
+		//set visual attributes of the elements
+		sle0.getVisualizer().setColor("black");
+		sle0.getVisualizer().setOpacity((float)0.5);
+		sle1.getVisualizer().setColor("green");
+		
+		//pass the handle of your data structure
+		//(reference to the 1st element of your fata structure)
+		bridges.setDataStructure(sle0);
+		
+		//visualize data structure
+		bridges.visualize();
+	}
+}
