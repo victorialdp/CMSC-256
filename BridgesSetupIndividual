@@ -29,7 +29,7 @@ public class HelloWorld {
 		sle1.getVisualizer().setColor("green");
 		
 		//pass the handle of your data structure
-		//(reference to the 1st element of your fata structure)
+		//(reference to the 1st element of your data structure)
 		bridges.setDataStructure(sle0);
 		
 		//visualize data structure
